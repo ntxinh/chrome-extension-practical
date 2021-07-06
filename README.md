@@ -8,6 +8,7 @@
 - communication between components
 
 ```
+#host_permissions
 "<all_urls>",
-"http*://*/*"
+"*://*/*"
 ```
