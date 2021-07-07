@@ -22,6 +22,11 @@
     }
   },
   "options_page": "./options.html",
-  "permissions": ["activeTab", "tabs", "storage", "scripting"],
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage",
+    "scripting"
+  ],
   "host_permissions": ["https://www.google.com/"]
 }

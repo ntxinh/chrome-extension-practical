@@ -10,5 +10,7 @@
 ```
 #host_permissions
 "<all_urls>",
-"*://*/*"
+"*://*/*",
+"http://*/*",
+"https://*/*"
 ```
