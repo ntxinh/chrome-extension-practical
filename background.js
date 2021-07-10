@@ -8,6 +8,10 @@ chrome.runtime.onInstalled.addListener(() => {
 
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
   if (changeInfo.status === 'complete' && /^http/.test(tab.url)) {
+    chrome.action.setBadgeBackgroundColor({ color: '#F00', tabId: tabId }, () => {
+      chrome.action.setBadgeText({ text: 'grr' });
+    });
+
     chrome.scripting.insertCSS({
       target: { tabId },
       files: ['./foreground.css']
